@@ -1,4 +1,4 @@
-# Template Backend de Projetos - {IN} Junior 🐺
+# Template Backend de Projetos
 
 ## 📋 Sumário:
 
@@ -119,8 +119,8 @@ Neste repositório está o projeto para ...
 ## 💻 Como Executar o Servidor:
 
 1. Abra o terminal - `CMD`, `PowerShell`, `Bash` ou similares - em algum diretório de preferência em sua máquina.
-2. Clone este repositório com o comando: `git clone https://github.com/IN-Junior-UFF/backend-template-reborn`.
-3. Navegue para dentro do projeto clonado com o comando: `cd backend-template-reborn`.
+2. Clone este repositório com o comando: `git clone https://github.com/IN-Junior-UFF/Backend-Template`.
+3. Navegue para dentro do projeto clonado com o comando: `cd Backend-Template`.
 4. Instale as dependências do projeto ao executar no console o comando: `npm install`.
 5. Crie um arquivo `.env` na raiz do projeto copiando o conteúdo do `.env.example`. Preencha manualmente os valores que não estiverem definidos.
 
@@ -235,7 +235,7 @@ Para mais informações detalhadas sobre a instalação do Docker em ambiente Li
 ## 🔗 Links Externos:
 
 * **Design Figma do Projeto**: <a href="#" target="_blank">Clique Aqui</a>
-* **Template Backend Utilizado**: <a href="https://github.com/IN-Junior-UFF/backend-template-reborn" target="_blank">Clique Aqui</a>
+* **Template Backend Utilizado**: <a href="https://github.com/IN-Junior-UFF/Backend-Template" target="_blank">Clique Aqui</a>
 
 <a name="equipe-de-desenvolvimento"></a>
 
