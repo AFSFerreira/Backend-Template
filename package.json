@@ -29,7 +29,7 @@
     "fastify": "5.5.0",
     "is-odd": "3.0.1",
     "nodemailer": "7.0.5",
-    "pino": "9.9.0",
+    "pino": "8.0.0",
     "uuid": "11.1.0",
     "zod": "4.0.17"
   },
@@ -45,6 +45,6 @@
     "tsup": "8.5.0",
     "tsx": "4.20.4",
     "typescript": "5.9.2",
-    "typescript-eslint": "8.40.0"
+    "typescript-eslint": "8.41.0"
   }
 }
