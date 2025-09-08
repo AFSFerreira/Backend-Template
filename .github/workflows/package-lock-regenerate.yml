@@ -1,0 +1,44 @@
+name: Regenerate package-lock
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch alvo para regeneração'
+        required: true
+        default: 'dev'
+      regenerate_npm:
+        description: 'Regenerar lockfile com npm install'
+        required: true
+        default: 'true'
+
+  pull_request:
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+
+jobs:
+  regenerate-lock:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch || github.head_ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.0.0
+          cache: 'npm'
+
+      - name: Regenerate package-lock
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          npm install
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add package-lock.json
+          git diff --quiet || git commit -m "Regenerate package-lock.json"
+          git push || echo "No changes to push"
