@@ -27,11 +27,12 @@
     "bcryptjs": "3.0.2",
     "cpf-cnpj-validator": "1.0.3",
     "fastify": "5.5.0",
+    "is-odd": "3.0.1",
     "nodemailer": "7.0.5",
     "pino": "9.9.0",
     "uuid": "11.1.0",
     "zod": "4.0.17"
-  }, 
+  },
   "devDependencies": {
     "@eslint/js": "9.33.0",
     "eslint": "9.33.0",
